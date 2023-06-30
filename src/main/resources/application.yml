@@ -1,0 +1,37 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: zhangxin
+    url: jdbc:mysql://175.178.8.252:4306/zhangxin?characterEncoding=utf-8&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8
+  freemarker:
+    settings:
+      classic_compatible: true #处理空值
+      datetime_format: yyy-MM-dd HH:mm
+      number_format: 0.##
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+servlet:
+  multipart:
+    max-file-size: 10MB
+    max-request-size: 100MB
+mybatis-plus:
+  type-aliases-package: com.zhangxin.gpt.entity
+  mapper-locations: mapper/*.xml
+
+wechat:
+  # 公众账号, 授权
+  mpAppId: wx01ab542783583db2
+  mpAppSecret: 5f213ea08195ef1a33296489aae68826
+  # 支付/商户号
+  mchId: 7551000001
+  mchKey: C31A2A8FDDD3EB093CE366AED0E7C980
+  notifyUrl: http://czxts4.natappfree.cc/wechat/authorize
+
+picture:
+  imagePathWin: C:\Users\zhangxin\Desktop\0327\
+  imagePathLinux: zhangmiao

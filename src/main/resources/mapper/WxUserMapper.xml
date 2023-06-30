@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangxin.gpt.mapper.WxUserMapper">
+  <resultMap id="BaseResultMap" type="com.zhangxin.gpt.entity.WxUser">
+    <!--@mbg.generated-->
+    <!--@Table wx_user-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="is_subscribe" jdbcType="INTEGER" property="isSubscribe" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="integral" jdbcType="INTEGER" property="integral" />
+    <result column="invite_num" jdbcType="INTEGER" property="inviteNum" />
+    <result column="is_vip" jdbcType="INTEGER" property="isVip" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, open_id, created_time, is_subscribe, update_time, integral, invite_num, is_vip
+  </sql>
+</mapper>
