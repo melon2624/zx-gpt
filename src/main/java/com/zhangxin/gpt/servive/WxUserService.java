@@ -2,7 +2,6 @@ package com.zhangxin.gpt.servive;
 
 import com.zhangxin.gpt.entity.WxUser;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.springframework.boot.configurationprocessor.json.JSONException;
 
 /**
  * @author zhangxin

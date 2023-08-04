@@ -13,7 +13,6 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -59,6 +58,7 @@ public class TestController {
         WxUser wxUser = userMapper.selectOne(wrapper);
     }
 
+/*
 
     @RequestMapping("/test")
     public void test() {
@@ -122,6 +122,7 @@ public class TestController {
 
 
     }
+*/
 
 
     @RequestMapping("/test2")
